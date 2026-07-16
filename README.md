@@ -1,12 +1,10 @@
 # Fire-Detection-System
 
----
 
-# Fire Detection System Using OpenCV
+## Fire Detection System Using OpenCV
 
 This project detects fire-like colors from a webcam feed using OpenCV and triggers an alarm if a fire is detected. The system processes the video stream, identifies fire-like colors, and alerts the user with an alarm sound when a fire is detected. If no fire is detected within a specified time frame, the alarm will stop automatically.
 
----
 
 ## Features
 
@@ -14,7 +12,6 @@ This project detects fire-like colors from a webcam feed using OpenCV and trigge
 * **Alarm System** : When a fire is detected, an alarm sound is played. The alarm stops if no fire is detected for a certain period.
 * **Real - time Video Feed** : Displays both the original webcam feed and a filtered feed showing only fire-like regions.
 
----
 
 ## Requirements
 
@@ -31,7 +28,6 @@ To install the required Python libraries, use the following commands :
 pip install opencv-python numpy playsound
 ```
 
----
 
 ## How It Works
 
@@ -41,7 +37,6 @@ pip install opencv-python numpy playsound
 4. **Alarm Trigger** : If the number of fire-like pixels exceeds a defined threshold, the alarm is triggered by playing an MP3 sound file.
 5. **Alarm Stop** : If no fire is detected within 5 seconds, the alarm is stopped.
 
----
 
 ## Setup Instructions
 
@@ -50,7 +45,7 @@ pip install opencv-python numpy playsound
 Clone this repository to your local machine using the following command :
 
 ```bash
-git clone https://github.com/yourusername/fire-detection.git
+git clone https://github.com/Abhinav-cloud482/fire-detection.git
 cd Fire-Detection-System
 ```
 
@@ -70,7 +65,6 @@ Fire Detection System.py
 
 Press the `q` key to quit the program.
 
----
 
 ## Code Overview
 
@@ -89,36 +83,30 @@ Press the `q` key to quit the program.
 
 * **Alarm Duration** : The alarm will keep playing as long as fire is detected. Once no fire is detected for 5 seconds, the alarm will stop.
 
----
 
 ## Customization
 
 * **Threshold Adjustments** : You can adjust the `fire_threshold` value to make the system more or less sensitive to fire detection based on your environment.
 * **HSV Range** : The HSV range for detecting fire-like colors can also be adjusted if you notice the system isn't detecting fire correctly.
 
----
 
 ## Known Issues
 
 * The system may give false positives or miss detections based on lighting conditions, camera quality, and fire color accuracy.
 * The alarm sound might not stop immediately due to threading issues with `playsound`.
 
----
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
 
 ## Contributing
 
 Feel free to fork the repository, open issues, and submit pull requests. If you make improvements or fixes, your contributions are welcome!
 
----
 
 ## Contact
 
 If you have any questions or suggestions, feel free to open an issue on GitHub.
 
----
